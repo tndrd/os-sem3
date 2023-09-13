@@ -151,10 +151,6 @@ int main()
   else
   { // Parent
     //close(readFd);
-    parent(writeFd, readFd, message, strnlen(message, MAX_MSG_SIZE));
-
-    int status = 0;
-
-    return 0;
+    return parent(writeFd, readFd, message, strnlen(message, MAX_MSG_SIZE));;
   }
 }
